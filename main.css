@@ -1,4 +1,70 @@
-h1 {
-    text-align:center;
-    color:blue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    padding: 1rem;
+}
+
+.header {
+    height: 100vh;
+    background-color:  #922b21;
+}
+
+.header__title {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 2rem 0;
+    font-style: italic;
+    color: #fff;
+}
+
+.article{
+    display: grid;
+}
+
+.article--header {
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    height: 100vh;
+}
+
+.article__left {
+    
+}
+
+.article__img {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.article__right {
+    
+}
+.article__lista {
+    padding: 0 2rem;
+    line-height: 26px;
+}
+
+
+.article__books {
+    grid-template-columns: 2fr 3fr;
+    height: 100vh;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid;
+}
+.card__img {
+    width: 300px;
+}
+.card__p {
+    padding: 1rem;
 }
