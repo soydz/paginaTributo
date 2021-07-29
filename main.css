@@ -6,21 +6,55 @@
 
 .container {
     margin: 0 auto;
-    width: 1000px;
+    max-width: 1000px;
     padding: 1rem;
 }
 
 .header {
-    height: 100vh;
     background-color:  #922b21;
+}
+
+.header--relative{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px ,1fr));
+    position: relative;
+}
+
+.header__div--img {
+    margin: auto;
+    position: relative;
+    max-width: 90%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;  
+}
+
+.header__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header__div--title {
+    align-self: center;
 }
 
 .header__title {
     text-align: center;
-    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    margin-top: -2.5rem;
+    font-size: 4rem;
     padding: 2rem 0;
     font-style: italic;
     color: #fff;
+}
+
+
+.header__p {
+    margin: 0 auto;
+    color: #fff;
+    max-width: 90%;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
 }
 
 .article{
@@ -28,9 +62,9 @@
 }
 
 .article--header {
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px ,1fr));
     align-items: center;
-    height: 100vh;
+   
 }
 
 .article__left {
@@ -44,27 +78,98 @@
     border-radius: 5px;
 }
 
-.article__right {
-    
+.article__p {
+    text-align: center;
+    margin-top: 1rem;
 }
+
 .article__lista {
     padding: 0 2rem;
     line-height: 26px;
 }
 
+.books {
+    background-color: #f4f6f6;
+}
 
-.article__books {
-    grid-template-columns: 2fr 3fr;
-    height: 100vh;
+.article--books {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-row-gap: 3rem;
+    margin: 3rem 0;
+
 }
 
 .card {
+    margin: auto;
     width: 300px;
-    border: 1px solid;
+    border: 1px solid lightgray;
+    border-radius: 5px;
 }
+
 .card__img {
-    width: 300px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
 }
 .card__p {
     padding: 1rem;
+    position: relative;
+}
+.card__span {
+    position: absolute;
+    right: 1rem;
+}
+
+.leyes__h3 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.leyes__ol {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    list-style: none;
+    margin-top: 4rem;
+    line-height: 1.5rem;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+.leyes__ol li {
+    border: 1px solid;
+    padding: 2rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer__p {
+    margin: 2rem 0;
+}
+
+.footer__a {
+    font-size: 1.3rem;
+}
+
+.footer__barra {
+    height: 3rem;
+    background-color:  #922b21;
+}
+
+
+@media(min-width: 1000px){
+    .header {
+        height: 100vh;
+    }
+    .header--relative {
+        height: 100vh;
+    }
+    .leyes {
+        height: 65vh;
+    }
+    .footer {
+        height: 35vh;
+    }
 }
