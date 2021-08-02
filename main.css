@@ -45,7 +45,6 @@
     color: #fff;
 }
 
-
 .header__p {
     margin: 0 auto;
     margin-bottom: 3rem;
@@ -90,7 +89,6 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-row-gap: 3rem;
     margin: 3rem 0;
-
 }
 
 .card {
@@ -104,10 +102,12 @@
     width: 100%;
     border-radius: 5px 5px 0 0;
 }
+
 .card__p {
     padding: 1rem;
     position: relative;
 }
+
 .card__span {
     position: absolute;
     right: 1rem;
@@ -153,7 +153,6 @@
     background-color:  #922b21;
 }
 
-
 @media(min-width: 1000px){
     .header {
         height: 100vh;
@@ -173,6 +172,4 @@
     .footer {
         height: 35vh;
     }
-}
-
 }
