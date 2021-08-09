@@ -153,6 +153,16 @@
     background-color:  #922b21;
 }
 
+.footer__a {
+    text-decoration: none;
+}
+
+.dz {
+    color: #fff;
+    padding-top: 10px;
+    font-size: 1.3rem;
+}
+
 @media(min-width: 1000px){
     .header {
         height: 100vh;
